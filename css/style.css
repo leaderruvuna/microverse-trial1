@@ -1,0 +1,93 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+#container {
+    position: auto;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: auto;
+    align-items: center;
+    text-align: center; 
+} 
+#form-container {
+    padding-top: 50px;
+    position: auto;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(24, 13, 29);
+    opacity: 80%;
+    color:white;
+} 
+#title{
+    color: black;
+    text-align: center;
+    font-size: 2rem;
+} 
+#description{
+    color: black;
+    text-align: center;
+    font-size: 1rem;
+}
+#survey-form {
+    height: auto;
+    width: 450px;
+    background: rgb(148, 68, 132);
+    padding: 20px;
+    border-radius: 5px;
+    opacity: 70%;
+    position: auto;
+
+}
+#survey-form input{
+    margin: 20px auto;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    padding: 3px;
+    width:70%;
+    padding: 8px;
+    border: 1px solid gray;
+}
+#submit {
+    background-color:black ;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.6;
+    border-radius: 7%;    
+}
+#submit:hover {
+    opacity: 1;
+}
+#name, #email {
+    display: inline-block;
+    padding: 3px;
+}    
+#comment{
+    width: 400px;
+}    
+#dropdown{
+    width: 330px;
+    height: 30px;
+    margin:6px 0px 4px 0px;
+}
+
+.selection-title{
+    font-size: 20px;
+    color:black !important;
+}
+

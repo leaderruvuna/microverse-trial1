@@ -7,54 +7,76 @@
   </head>
   <body>
     <div id="container">
-       <div id="">
+       <div id="title-container">
          <h1 id="title">Microverse survey form</h1><br>
          <p id="description">Thank you for taking the time to help us improve the platform</p>
        </div>
        <br>
        <div id="form-container">
            <form action="" id="survey-form">
-            <label for="name" id="name-label">Name</label><br>
-            <input type="text" id="name" placeholder="Enter your name"><br>
-            <label for="name" id="email-label">Email</label><br>
-            <input type="text" id="email" placeholder="Enter your email"><br>
-            <label for="name" id="number-label">Age(optional)</label><br>
-            <input type="number" id="number" placeholder="Age"><br>
-            <label for="name">Which option best describes your current role?</label><br>
-            <select name="" id="role" id="dropdown" aria-placeholder="Select current role"><br>
-              <option value="">Student</option>
-              <option value="">Full time Job</option>
-              <option value="">Full time learner</option>
-              <option value="">Prefer not to say</option>
-              <option value="">Other</option>
-            </select>
+            <div id="identity-container">
+              <label for="name" id="name-label">Name</label><br>
+              <input type="text" id="name" placeholder="Enter your name" required><br>
+              <label for="name" id="email-label">Email</label><br>
+              <input type="email" id="email" placeholder="Enter your email" required><br>
+              <label for="name" id="number-label">Age(optional)</label><br>
+              <input type="number" id="number" placeholder="Age" min="0" max="10"><br>
+            </div>
+            <div id="role-container">
+              <label for="name" class="selection-title">1) Which option best describes your current role?</label><br><br>
+              <select name="" id="dropdown" aria-placeholder="Select current role"><br>
+                <option value="">Student</option>
+                <option value="">Full time Job</option>
+                <option value="">Full time learner</option>
+                <option value="">Prefer not to say</option>
+                <option value="">Other</option>
+              </select>
+              <br>
+            </div>
             <br>
-            <label for="">How would you recommend microverse to a friend?</label><br>
-            <input type="radio" value="1"><label for="">Definitly</label><br>
-            <input type="radio" value="1"><label for="">Maybe</label><br>
-            <input type="radio" value="1"><label for="">Not sure</label><br>
-            <label for="name">What is your favorite feature of frecodeCamp</label><br>
-            <select name="" id="role" id="dropdown" aria-placeholder="Select an option"><br>
-              <option value="">Challenge</option>
-              <option value="">Project </option>
-              <option value="">Community</option>
-              <option value="">Opensource</option>
-            </select>
+            <div id="recommend-container">
+              <label for="" class="selection-title">2) How would you recommend  to a friend?</label><br><br>
+              <table>
+                <tr>
+                  <th style="width:50%;"></th>
+                  <th style="width:50%;"></th> 
+                </tr>
+                <tr ><td style="width: 66%;"><input type="radio" name="recommend" value="1"></td><td ><label for="">Definitly</label></td></tr>
+                <tr><td><input type="radio" value="2" name="recommend"></td><td><label for="">Maybe</label></td></tr>
+                <tr><td><input type="radio" value="3" name="recommend"></td><td><label for="">Not sure</label></td></tr>
+              </table>
+            </div>
+            <div id="features-container">
+              <label for="name" class="selection-title">3) What is your favorite feature of frecodeCamp</label><br><br>
+              <select name=""  id="dropdown" aria-placeholder="Select an option"><br>
+                <option value="">Challenge</option>
+                <option value="">Project </option>
+                <option value="">Community</option>
+                <option value="">Opensource</option>
+              </select>
+              <br>
+              <br>
+              <label for="" class="selection-title">4) what would like to be improved in your career?</label><br><br>
+              <table>
+                <tr>
+                  <th style="width:50%;"></th>
+                  <th style="width:50%;"></th> 
+                </tr>
+                <tr><td style="width: 50%;"><input type="checkbox" value="1"></td><td><label for="">Front-end Projects</label></td></tr>
+                <tr><td><input type="checkbox" value="2"></td><td><label for="">Back-end Projects</label></td></tr>
+                <tr><td><input type="checkbox" value="3"></td><td><label for="">Data Visualization</label></td></tr>
+                <tr><td><input type="checkbox" value="4"></td><td><label for="">Challenges</label></td></tr>
+                <tr><td><input type="checkbox" value="5"></td><td><label for="">Gitter help rooms</label></td></tr>
+                <tr><td><input type="checkbox" value="6"></td><td><label for="">Videos</label></td></tr>
+                <tr><td><input type="checkbox" value="7"></td><td><label for="">City Meetups</label></td></tr>
+                <tr><td><input type="checkbox" value="8"></td><td><label for="">Wiki</label></td></tr>
+                <tr><td><input type="checkbox" value="9"></td><td><label for="">Forum</label></td></tr>
+                <tr><td><input type="checkbox" value="10"></td><td><label for="">Additional cources</label></td></tr>
+              </table>
+            </div>
             <br>
-            <label for="">what would like to be improved?</label><br>
-            <input type="checkbox"><label for="">Front-end Projects</label><br>
-            <input type="checkbox"><label for="">Back-end Projects
-            </label><br>
-            <input type="checkbox"><label for="">Data Visualization</label><br>
-            <input type="checkbox"><label for="">Challenges</label><br>
-            <input type="checkbox"><label for="">Gitter help rooms</label><br>
-            <input type="checkbox"><label for="">Videos</label><br>
-            <input type="checkbox"><label for="">City Meetups</label><br>
-            <input type="checkbox"><label for="">Wiki</label><br>
-            <input type="checkbox"><label for="">Forum</label><br>
-            <input type="checkbox"><label for="">Additional cources</label><br>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your comment here"></textarea><br>
-            <button id="submit">submit</button>
+            <textarea name="" id="comment" cols="30" rows="10" placeholder="Enter your comment here"></textarea><br>
+            <button id="submit"><label for="">Submit</label></button>
            </form>
        </div>
     </div>
